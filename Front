@@ -1,0 +1,11 @@
+n = int(input())
+m = list(map(int, input().split()))
+
+while m:
+    # Print and remove the first element
+    print(m.pop(0), end=" ")
+    
+    # Check if the list is now empty before trying to print the last element
+    if m:
+        print(m.pop(-1), end=" ")
+        
